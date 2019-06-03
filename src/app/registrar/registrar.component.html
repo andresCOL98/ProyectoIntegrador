@@ -1,0 +1,47 @@
+<body>
+  <div class="container">
+    <div class="row justify-content-md-center mt-4">
+      <h2 class="center">Registrarse</h2>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="inputNombre1">Nombre</label>
+        <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="inputNombre" placeholder="Nombre(s)">
+      </div>
+
+      <div class="form-group">
+        <label for="inputApellido1">Apellido</label>
+        <input [(ngModel)]="apellido" name="apellido" type="text" class="form-control" id="inputApellido" placeholder="Numero de identidad">
+      </div>
+
+    <div class="form-group">
+        <label for="inputNumeroIdentidad1">Numero de Identidad</label>
+        <input [(ngModel)] = "numeroIdentidad" name="numeroIdentidad" type="numeric" class="form-control" id="inputNumeroIdentidad" placeholder="Numero de identidad">
+      </div>
+
+      <div class="form-group">
+        <label for="inputEmail1">Direccion de correo</label>
+        <input [(ngModel)]="correo" name="correo" type="email" class="form-control" id="inputCorreo" placeholder="Correo Electronico">
+      </div>
+
+      <div class="form-group">
+        <label for="inputCargo1">Cargo</label>
+        <input [(ngModel)]="cargo" name="cargo" type="text" class="form-control" id="inputCargo" placeholder="Cargo">
+      </div>
+
+      <div class="form-group">
+        <label for="inputNombreUsuario1">Nombre de usuario</label>
+        <input [(ngModel)]="nombreUsuario" name="nombreUsuario" type="text" class="form-control" id="inputNombreUsuario" placeholder="Nombre de Usuario">
+      </div>
+
+      <div class="form-group">
+        <label for="inputContrasena1">Contraseña</label>
+        <input [(ngModel)]="contrasena" name="contrasena" type="password" class="form-control" id="inputContrasena" placeholder="Contraseña">
+      </div>
+
+      <button (click)="registrarse()" type="button" class="btn btn-primary">Registrarse</button>
+
+    </form>
+  </div>
+</body>

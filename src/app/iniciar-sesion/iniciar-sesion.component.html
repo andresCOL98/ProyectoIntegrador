@@ -1,0 +1,19 @@
+<body>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <h2 class="center">Iniciar Sesión</h2>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre de usuario</label>
+        <input [(ngModel)]="username" name="username" type="text" class="form-control" id="inputNombre2" aria-describedby="emailHelp" placeholder="Nombre de usuario">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña</label>
+        <input [(ngModel)]="contrasena" name="contrasena" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+      </div>
+      <button (click)="login()" type="submit" class="btn btn-primary">Iniciar Sesión</button>
+      <button type="button" class="btn btn-primary" [routerLink]="['/registrar']" routerLinkActive="router-link-active"  >Registrarse</button>
+    </form>
+  </div>
+</body>
