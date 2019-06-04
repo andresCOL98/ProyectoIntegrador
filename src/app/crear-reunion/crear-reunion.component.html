@@ -1,0 +1,43 @@
+<body>
+  <div class="container">
+    <div class="row justify-content-md-center mt-4">
+      <h2 class="center">Crear Reunion</h2>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="inputNombre1">Nombre de la entidad</label>
+        <input [(ngModel)]="nombreEntidad" name="nombreEntidad" type="text" class="form-control" id="inputNombre" placeholder="Nombre de la entidad">
+      </div>
+
+      <div class="form-group">
+        <label for="inputApellido1">Numero de reunion</label>
+        <input [(ngModel)]="numeroReunion" name="numeroReunion" type="number" class="form-control" id="inputApellido" placeholder="Numero de reunion">
+      </div>
+
+    <div class="form-group">
+        <label for="inputNumeroIdentidad1">Titulo de la reunion</label>
+        <input [(ngModel)]="tituloReunion" name="tituloReunion" type="text" class="form-control" id="inputNumeroIdentidad" placeholder="Titulo de la reunion">
+      </div>
+
+      <div class="form-group">
+        <label for="inputCargo1">Fecha</label>
+        <input [(ngModel)]="fecha" name="fecha" type="text" class="form-control" id="inputCargo" placeholder="Fecha">
+      </div>
+
+      <div class="form-group">
+        <label for="inputNombreUsuario1">Hora</label>
+        <input [(ngModel)]="hora" name="hora" type="text" class="form-control" id="inputNombreUsuario" placeholder="Hora">
+      </div>
+
+
+      <div class="form-group">
+        <label for="inputEmail1">Lugar</label>
+        <input [(ngModel)]="lugar" name="lugar" class="form-control" id="inputCorreo" aria-describedby="emailHelp"  placeholder="Lugar">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Crear</button>
+
+    </form>
+  </div>
+</body>

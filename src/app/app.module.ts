@@ -9,6 +9,9 @@ import { RegistrarComponent } from './registrar/registrar.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { CrearReunionComponent } from './crear-reunion/crear-reunion.component';
+import { ReunionComponent } from './reunion/reunion.component';
+import { BuscarReunionComponent } from './buscar-reunion/buscar-reunion.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     AppComponent,
     IniciarSesionComponent,
     MenuComponent,
-    RegistrarComponent
+    RegistrarComponent,
+    CrearReunionComponent,
+    ReunionComponent,
+    BuscarReunionComponent
   ],
   imports: [
     BrowserModule,

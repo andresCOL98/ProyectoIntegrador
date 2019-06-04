@@ -1,20 +1,19 @@
 <body>
   <div class="container">
     <div class="row">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+      <button type="button" class="btn btn-primary btn-sm">Cerrar sesión</button>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <img src="assets\pictures\reunion.jpg" class="align-self-center m-4" alt="...">
+      </div>
+    </div>
+
+    <div class="row">
+      <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/reunion']" routerLinkActive="router-link-active" >Reuniones</button>
+      <button type="button" class="btn btn-secondary btn-lg" [routerLink]="['/crear-reunion']" routerLinkActive="router-link-active" >Crear Reuniones</button>
+      <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/buscar-reunion']" routerLinkActive="router-link-active" >Buscar</button>
     </div>
   </div>
 </body>
